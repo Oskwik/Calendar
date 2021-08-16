@@ -1,29 +1,35 @@
 package se.lexicon.models;
 
 public class AppUser {
-
+    // fields
     private int id;
     private String username;
     private String password;
-    private AppUser;
-    private int getId();
-    private String getPassword();
-    private String getUsername();
-    private void setPassword(String);
-    private void setUsername(String);
 
+
+    // constructor
     public AppUser(int id, String username, String password) {
         this.id = id;
         this.username = username;
         this.password = password;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    // getters and setters
+    public int getId() {
+        return id;
+    }
+
+
+    public String getUsername() {
+        return username;
     }
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void setPassword(String password) {
